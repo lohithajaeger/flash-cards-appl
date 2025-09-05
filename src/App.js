@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import DeckList from './components/DeckList';
 import FlashcardList from './components/FlashcardList';
 import AddCardForm from './components/AddCardForm';
+import './styles/app.css';
 import { saveDecksToStorage, loadDecksFromStorage } from './utils/storage';
 
 const starterDecks = [

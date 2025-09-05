@@ -15,6 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/decks", require("./routes/decks"));
 app.use('/api/decks', decksRouter);
 app.use('/api/cards', cardsRouter);
 

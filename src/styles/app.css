@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #4b0082, #5a4fcf, #7b68ee);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+h2, h3 {
+  color: #e6e6fa;
+}
+
+button {
+  background: linear-gradient(90deg, #5a4fcf, #7b68ee);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #7b68ee, #5a4fcf);
+}
+
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 8px;
+}

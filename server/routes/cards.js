@@ -20,9 +20,13 @@ router.post('/', async (req, res) => {
 });
 
 // DELETE card
-router.delete('/:id', async (req, res) => {
-  await Card.findByIdAndDelete(req.params.id);
-  res.json({ success: true });
+router.delete("/:id", async (req, res) => {
+  try {
+    await Card.findByIdAndDelete(req.params.id);
+    res.json({ message: "Card deleted" });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 
 module.exports = router;
